@@ -80,8 +80,33 @@ h2{text-align: center; font-size: 2rem;}
             color: var(--font-color);
             border: 2px solid var(--font-color);}
 
+        /* reviews */
+        .reviews{width: 80%; margin: auto;
+            border-radius: 10px; display: flex;
+            flex-wrap: wrap; justify-content: center;
+            align-content: center; gap: 20px; padding: 20px;
+            align-items: center;}
+
+            .review-box{border: 2px solid var(--font-color);
+                    border-radius: 10px; width: 25%; padding: 10px;}
+
+            .customer img{width: 50px;}
+             
+            .customer{display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;}
+
 
 /* main ends */
+
+/* footer starts */
+footer{background-color: var(--primary-color);
+    height: 10vh; margin-top: 50px; text-align: center;}
+
+    footer p{padding-top: 30px;
+        font-size: 0.8rem;}
+
 
 
 /* smaller devices */
@@ -108,4 +133,7 @@ h2{text-align: center; font-size: 2rem;}
         text-align: center; height: 100vh;}
     .t-shirt img{height: 40%;}
     .t-shirt-text{margin-top: 50px;}
+
+    .reviews{flex-direction: column;}
+    .review-box{width: 90%;}
 }
