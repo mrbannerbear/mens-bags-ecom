@@ -27,7 +27,7 @@ body{background-color: azure;}
 
     /* banner */
         .banner{width: 80%; margin: 50px auto;
-            display: flex;
+            display: flex; border: 2px solid var(--font-color);
             align-items: center; border-radius: 10px;
             justify-content: space-around;}
         
@@ -39,6 +39,50 @@ body{background-color: azure;}
 
 /* header ends */
 
+/* main starts */
+
+main{margin-top: 100px;}
+h2{text-align: center; font-size: 2rem;}
+
+    /* box container */
+    .box-container{width: 80%;
+            margin: 50px auto; display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;}
+
+        .box{border: 2px var(--font-color) solid; padding: 20px;
+            border-radius: 10px;}
+
+        .box img{width: 80%; display: block;
+                margin: 0 auto;}
+
+        .product-title{display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;}
+
+        .box p{margin-bottom: 15px; font-size: 0.8rem;}
+    
+    /* t-shirt */
+    .t-shirt{display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0;
+        background-color: var(--primary-color);
+        height: 80vh; width: auto;}   
+
+        .t-shirt img{height: 80%;}
+
+        .t-shirt-text h3{font-size: 2rem;
+            margin-bottom: 10px;}
+
+        button{margin-top: 10px; padding: 5px 10px;
+            background-color: var(--primary-color);
+            color: var(--font-color);
+            border: 2px solid var(--font-color);}
+
+
+/* main ends */
+
 
 /* smaller devices */
 
@@ -49,8 +93,19 @@ body{background-color: azure;}
     nav{flex-direction: column;}
     .menu a{margin: 5px;}
 
-    .banner{width: 100%;
-        flex-direction: column-reverse; text-align: center; gap: 20px;}
+    .banner{width: 90%;
+        flex-direction: column-reverse; text-align: center; gap: 20px;
+        padding: 10px 0 50px;}
     .banner img{width: 100%; padding: 10px;}
     
+
+    /* main */
+
+    .box-container{grid-template-columns: repeat(1, 1fr);
+        width: 90%;}
+    
+    .t-shirt{flex-direction: column;
+        text-align: center; height: 100vh;}
+    .t-shirt img{height: 40%;}
+    .t-shirt-text{margin-top: 50px;}
 }
